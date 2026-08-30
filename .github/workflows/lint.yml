@@ -1,0 +1,21 @@
+name: Lint and Type Check
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install Linting Tools
+        run: pip install ruff mypy pydantic fastapi sqlalchemy
+      - name: Lint with Ruff
+        run: ruff check app/
+      - name: Format Check with Ruff
+        run: ruff format --check app/
+      - name: Type Check with Mypy
+        run: mypy app
