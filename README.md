@@ -200,31 +200,15 @@ pip install -r requirements.txt
 pytest tests/
 ```
 
-## How to Contribute
-
-We welcome contributions! To get started:
-
-1. **Fork the repository** on GitHub.
-2. **Create a feature branch** (`git checkout -b feature/amazing-feature`).
-3. **Commit your changes** (`git commit -m 'Add amazing feature'`).
-4. **Push to the branch** (`git push origin feature/amazing-feature`).
-5. **Submit a pull request**.
-
-### Contribution Principles:
-- **Code Quality**: Ensure code passes all tests and follows the project's styling guidelines.
-- **Test Coverage**: New features should include relevant unit or integration tests.
-- **Documentation**: Update the README or inline comments if your changes affect the public API or setup process.
-- **Schemas**: Ensure new endpoints have proper Pydantic validation.
-- **Decoupling**: Keep core business logic separate from gateway-specific implementations.
 
 
 ## Roadmap
 
 Planned improvements and future features:
 
-- [x] Implement API-level rate limiting (Phase 2)
-- [x] Add background job processing via ARQ (Phase 2)
-- [x] Add webhook signature verification (Phase 2)
+- [ ] Implement API-level rate limiting (Phase 2)
+- [ ] Add background job processing via ARQ (Phase 2)
+- [ ] Add webhook signature verification (Phase 2)
 - [ ] Add **Paystack** gateway adapter
 - [ ] Add **Flutterwave** gateway adapter
 - [ ] Add **Stripe** gateway adapter
